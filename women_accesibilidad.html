@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Computer Scientists</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="header">
+    <div class="header-title">
+        <h1>WOMEN: THE PIONNERS OF PROGRAMMING</h1>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis ipsa tempora,
+            blanditiis nam
+            perferendis deleniti iure error velit alias omnis facere, illum numquam molestiae eveniet nisi in molestias
+            laborum rerum! Omnis assumenda sunt excepturi facere. At rem maiores accusamus.</h4>
+    </div>
+</div>
+
+<div class="card-grid">
+    <div class="card">
+        <img src="img/hat-1.jpg" alt="Ada Lovelace">
+        <div class="card-content">
+            <h2 class="card-title">Ada Lovelace</h2>
+            <p class="card-description">Lorem, ipsum dolor.</p>
+            <a href="" class="btn">Read More</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img/hat-2.jpg" alt="Grace Hopper" >
+        <div class="card-content">
+            <h2 class="card-title">Grace Hopper</h2>
+            <p class="card-description">Iure, voluptate corrupti.</p>
+            <a href="" class="btn">Read More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="img/hat-3.jpeg" alt="Kathleen Booth">
+        <div class="card-content">
+            <h2 class="card-title">Kathleen Booth</h2>
+            <p class="card__description">Eveniet, necessitatibus id.</p>
+            <a href="" class="btn">Read More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="img/hat-4.jpg" alt="Radia Perlman">
+        <div class="card-content">
+            <h2 class="card-title">Radia Perlman</h2>
+            <p class="card__description">Illo, dolorem magnam?</p>
+            <a href="" class="btn">Read More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="img/hat-7.jpg" alt="Mary K. Keller">
+        <div class="card-content">
+            <h2 class="card-title">Mary K. Keller</h2>
+            <p class="card-description">Lorem, ipsum dolor.</p>
+            <a href="" class="btn">Read More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="img/hat-6.jpg" alt="Barbara Liskov">
+        <div class="card-content">
+            <h2 class="card-title">Barbara Liskov</h2>
+            <p class="card-description">Aliquid, enim ea.</p>
+            <a href="" class="btn">Read More</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img/hat-5.jpg" alt="Margaret Hamilton">
+        <div class="card-content">
+            <h2 class="card-title">Margaret Hamilton</h2>
+            <p class="card-description">Quos, facere alias.</p>
+            <a href="" class="btn">Read More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="img/hat-8.png" alt="">
+        <div class="card-content">
+            <h2 class="card-title">Mary Wilkes</h2>
+            <p class="card-description">Lorem, ipsum dolor.</p>
+            <a href="" class="btn">Read More</a>
+        </div>
+    </div>
+</div>
+<!-- Botones para ajustar el tamaño del texto -->
+<div class="container">
+    <button class = "btn" onclick="aumentarTexto()">Aumentar Texto</button>
+    <button class = "btn" onclick="disminuirTexto()">Disminuir Texto</button>
+</div>
+
+<script>
+    const button = document.querySelector('button');
+    // Add a mouseover event listener
+    button.addEventListener('mouseover', () => {
+        // Change the button's background color
+        button.style.backgroundColor = 'red';
+    });
+
+    // Add a mouseout event listener
+    button.addEventListener('mouseout', () => {
+        // Change the button's background color back to its original color
+        button.style.backgroundColor = '';
+    });
+
+    let tamañoTexto = 16; // Tamaño de texto base en píxeles
+
+    function aumentarTexto() {
+        tamañoTexto += 4;
+        document.body.style.fontSize = tamañoTexto + 'px';
+    }
+
+    function disminuirTexto() {
+        tamañoTexto -= 4;
+        document.body.style.fontSize = tamañoTexto + 'px';
+    }
+
+</script>
+
+
+</body>
+</html>
+
